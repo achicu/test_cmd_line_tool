@@ -9,6 +9,7 @@
 
 @interface ViewController : NSViewController
 
+@property (weak) IBOutlet NSTextFieldCell *text_box;
 
 @end
 

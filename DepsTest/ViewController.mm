@@ -7,12 +7,16 @@
 
 #import "ViewController.h"
 
+const char* get_arch();
+
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    // Do any additional setup after loading the view.
+    auto arch = get_arch();
+    auto str = [NSString stringWithFormat: @"Your arch is: %s", arch];
+    [self.text_box setStringValue: str];
 }
 
 
